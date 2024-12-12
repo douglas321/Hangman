@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8cb3c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid1, .grid2 {
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+#hangmanImage {
+    width: 100%;
+    max-width: 200px;
+}
+
+#secret-word {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.letter {
+    font-size: 24px;
+    padding: 0 10px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+#remainingGuesses {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ff0000;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+#keyboard button {
+    width: calc(100% / 9 - 5px);
+    outline: none;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#keyboard button:hover {
+    background-color: #ddd;
+}
+
+#keyboard button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
